@@ -15,18 +15,32 @@ class _HomeState extends State<Home> {
     });
   }
 
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: Column(children: [
+//         Text("$counterValue"),
+//         ElevatedButton(
+//           onPressed: () {
+//             addCounter();
+//           },
+//           child: Text("Increnme"),
+//         )
+//       ]),
+//     );
+//   }
+// }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: [
-        Text("$counterValue"),
-        ElevatedButton(
-          onPressed: () {
-            addCounter();
-          },
-          child: Text("Increnment value"),
-        )
-      ]),
+      body: Center(
+          child: Image.asset(name)
+          ),
+      // drawer: Drawer(
+      //   child: Column(
+      //     children: []
+      //   ),
+      // ),
     );
   }
 }
